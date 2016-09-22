@@ -1,0 +1,88 @@
+<html><title>Ads Prototype - Intro</title>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#link1").click(function(){
+     $('#content1').fadeOut('300');
+     $('#content2').fadeIn('300');
+  });
+   $("#link2").click(function(){
+     $('#content2').fadeOut('300');
+     $('#content3').fadeIn('300');
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div class="bg-grad"></div>
+	<div class="header"></div>
+	<div class="inner-container1">
+		<div class="leftcol">
+			<h1>BookBub Display Ads</h1>
+			<h3>Ads are about flexibility and giving you control to make smart marketing decisions to reach your goals.</h3>
+			
+
+					<div class="content-container">
+					<div id="content1">
+					<h3 class="head">Not everyone is a marketing pro. We're here to help.</h3>
+					<h4>How ad auctions work...</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<a id="link1" href="#"><button>Got it</button></a>
+					</div>
+
+					<div id="content2">
+					<h3 class="head">Not everyone is a marketing pro. We're here to help.</h3>
+					<div class="card-copy">
+					<h4>The differences between Ads and Featured Deals</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<a id="link2" href="#"><button>Got it</button></a>
+					</div>
+					<div class="card-image"></div>
+					</div>
+				<div id="content3">
+				<h3 class="head">You've got the basics!</h3>
+				<h4>Go ahead and create your first Ad!</h4>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+				<a href="goal.html"><button>Create an Ad</button></a>
+				</div>
+				</div>
+		
+		</div>
+		<div class="rightcol">
+			<h3>Common uses for Ads</h3>
+			<ul>
+				<li>
+					Pre-Orders
+					<p>Get sales before the book is even out.</p>
+				</li>
+				<li>
+					New Releases
+					<p>Promote an upcoming new release.</p>
+				</li>
+				<li>
+					Back-listed Books
+					<p>Promote books earlier in the series.</p>
+				</li>
+				<li>
+					Exposure
+					<p>Grow buzz around a book or author.</p>
+				</li>
+				<li>
+					Get New Followers
+					<p>Get more followers and grow your fan base.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
