@@ -70,6 +70,15 @@ li:before {
   width: 1.8em; 
 }
 
+.content-container h4:before {
+  content: "\f0eb";
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.3em; 
+  font-size: 24px;
+  color: #f44336;
+}
+
 li p {
 	font-size:13px;
 	font-weight:600;
@@ -77,8 +86,8 @@ li p {
 }
 
 .inner-container1, .inner-container2 {
-	max-width:1400px;
-	min-width:960px;
+	max-width:1280px;
+	min-width:1024px;
 	height:800px;
 	margin:40px auto;
 	padding:0 30px;
@@ -86,12 +95,13 @@ li p {
 
 .leftcol {
 	width:60%;
-	float: left;
 	display: inline-block;
+	min-width: 780px;
 }
 
 .rightcol {
-	width:30%;
+	max-width:25%;
+	min-width:20%;
 	float: right;
 	display: inline-block;
 }
@@ -108,14 +118,18 @@ li p {
 	margin:0 0 10px 0;
 	color: #323232;
 	width: 60%;
+	line-height: 1.5em;
 }
 
 p.centered {
 text-align:center;
 display:block;
-width: 50%;
+width: 45%;
 margin: 100px auto;
-clear: both
+clear: both;
+line-height: 1.5em;
+font-size:15px;
+color:#555;
 }
 
 .split1, .split2 {
@@ -212,10 +226,11 @@ clear: both
 
 .bucket-icon1, .bucket-icon2 {
 	background-image: url('roi.png');
-	display: inline-block;
+	display: block;
 	float: left;
 	width: 39px;
 	height: 33px;
+	margin:2px 26px 40px 0;
 }
 
 .bucket-icon2 {
@@ -225,8 +240,7 @@ clear: both
 }
 
 .bucket-copy {
-	display: inline-block;
-	margin: 0 0 0 26px;
+	display: block;
 }
 
 .bucket-copy h4 {
@@ -322,15 +336,15 @@ a:hover button {
 }
 
 #content1, #content2, #content3 {
-	height:375px;
+	height:445px;
 }
 #content2
 {
-height:462px;
+height:465px;
 }
 #content3
 {
-height:232px;
+height:200px;
 }
 #content2, #content3
 {
