@@ -1,0 +1,380 @@
+body {
+	margin:0;
+	padding:0;
+	background-color:#f5f5f5;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.containter {
+	width: 100%;
+}
+
+.header {
+	height:62px;
+	width:100%;
+	background-color:red;
+}
+
+.bg-grad {
+	background: linear-gradient(to right, #00bc9b 40%,#039be5 100%);
+	transform: rotate(7deg);
+	width: 150%;
+	height: 800px;
+	z-index: -1;
+	margin: -300px -100px 0 -100px;
+	position:fixed;
+}
+a, a:hover, button, button:hover {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color:#00bc9b;
+}
+h1 {
+	font-size: 52px;
+	font-weight:100;
+	line-height: 56px;
+	margin:0 0 20px 0;
+}
+
+h3 {
+	font-size:22px;
+	font-weight:500;
+	margin:0;
+}
+
+h4, li {
+	font-size:17px;
+	font-weight:600;
+	margin:16px 0 0 0;
+}
+
+ul {
+	margin-top: 24px;
+}
+
+li h4{
+	font-size:17px;
+}
+
+li {
+	margin:0 0 24px 0;
+	list-style: none;
+}
+
+li:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -2.1em; 
+  width: 1.8em; 
+}
+
+.content-container h3:before {
+  content: "\f0eb";
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.2em; 
+  font-size: 28px;
+  color: #f44336;
+}
+
+li p {
+	font-size:13px;
+	font-weight:600;
+	margin:0;
+}
+
+.inner-container1, .inner-container2 {
+	max-width:1280px;
+	min-width:1024px;
+	height:800px;
+	margin:40px auto;
+	padding:0 30px;
+}
+
+.leftcol {
+	width:60%;
+	display: inline-block;
+	min-width: 780px;
+}
+
+.rightcol {
+	max-width:25%;
+	min-width:20%;
+	float: right;
+	display: inline-block;
+}
+
+.inner-container2 h1 {
+	font-size: 36px;
+	font-weight:400;
+	line-height: 48px;
+	margin:0 0 10px 0;
+	color: #323232;
+}
+
+.inner-container2 p {
+	margin:0 0 10px 0;
+	color: #323232;
+	width: 60%;
+	line-height: 1.5em;
+}
+
+p.centered {
+text-align:center;
+display:block;
+width: 45%;
+margin: 100px auto;
+clear: both;
+line-height: 1.5em;
+font-size:15px;
+color:#555;
+}
+
+.split1, .split2 {
+	width:50%;
+	float: left;
+	margin:30px 0 0 0;
+	display: inline-block;
+	color:#323232;
+}
+
+.split-inner1, .split-inner2 {
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); 
+	border-top:10px solid #039be5;
+	margin: 0 15px 0 0;
+}
+
+.split-inner2 {
+	border-top:10px solid #00bc9b;
+	margin: 0 0 0 15px;
+}
+
+.split-inner-content {
+	margin:32px;
+	display: inline-block;
+}
+
+.split1 h3, .split2 h3 {
+	text-transform: uppercase;
+}
+
+
+.split1 a .card, .split2 a .card {
+	margin-top: 0;
+	margin:20px 0;
+	text-decoration:none;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.07);
+}
+
+.split1 a .card .chev, .split2 a .card .chev {
+	display: none;
+	width:100px;
+	float:right;
+	margin-left:30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.split1 a:hover .card .chev, .split2 a:hover .card .chev {
+	display: inline-block;
+	float: right;
+	width:100px;
+	margin-left:30px;
+	text-align: center;
+	  font-family: FontAwesome;
+  	color:red;
+}
+
+.split1 a:hover .card, .split2 a:hover .card {
+	margin-top: 0;
+	margin:20px 0;
+	border:1px solid red;
+	box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.07);
+}
+
+.split1 .card .card-inner, .split2 .card .card-inner{
+	padding: 12px 32px 20px;
+}
+
+.split1 .card p, .split2 .card p {
+	font-size:13px;
+	font-weight:normal;
+	margin:10px 0 0 0;
+	width: 90%;
+}
+
+.card, #content1, #content2, #content3, #content0 {
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	width: 100%;
+	color:#323232;
+	margin-top: 60px;
+	box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.07);
+	border-radius: 2px;
+}
+
+.head-inner {
+	display: block;
+	margin-bottom:24px;
+}
+
+.head-inner h3 {
+	font-weight:600;
+}
+
+.bucket-icon1, .bucket-icon2 {
+	background-image: url('roi.png');
+	display: block;
+	float: left;
+	width: 39px;
+	height: 33px;
+	margin:2px 26px 40px 0;
+}
+
+.bucket-icon2 {
+	background-image: url('expo.png');
+	width: 40px;
+	height: 40px;
+}
+
+.bucket-copy {
+	display: block;
+}
+
+.bucket-copy h4 {
+	font-weight:400;
+	margin:10px 0;
+}
+
+.card .head {
+	padding:28px 32px 22px 32px;
+	border-bottom: 1px solid #f8f8f8;
+}
+
+#content1 .head, #content2 .head, #content3 .head, #content0 .head {
+	padding:16px 0 24px 0;
+	border-bottom: 1px solid #f8f8f8;
+	display: block;
+	font-weight: 600;
+}
+
+#content1, #content2, #content3, #content0 {
+	padding: 10px 32px 32px 32px;
+}
+
+#content1 h4, #content2 h4, #content3 h4, #content0 h4 {
+	margin-top: 30px;
+}
+
+.card .card-body, #content1 .card-body, #content2 .card-body, #content3 .card-body, #content0 .card-body {
+	padding: 10px 32px 32px 32px;
+}
+
+
+.card .head h3, #content1 .head h3, #content2 .head h3, #content3 .head h3, #content0 .head h3 {
+	font-weight:600;
+	line-height: 1em;
+}
+
+.card .card-body p, #content1 p, #content2 p, #content3 p, #content0 p {
+	font-weight:normal;
+	line-height: 1.5em;
+	font-size: 15px;
+	margin-bottom: 17px;
+}
+
+.card-copy {
+	width:64%;
+	display: block;
+	float: left;
+	padding: 10px 32px 32px 32px;
+	margin-top: 70px;
+}
+
+.card-image{
+	display: block;
+	float: right;
+	margin-left: 74%;
+	margin-right: 32px;
+	margin-top:100px;
+	background: url('infographic.png') no-repeat;
+	width: 100%;
+
+}
+
+a button, a:hover button {
+	background-color: #f44336;
+	border:none;
+	height: 40px;
+	padding:0 32px;
+	min-width: 120px;
+	text-transform: uppercase;
+	color:#fff;
+	font-weight:700;
+	font-size: 14px;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+a:hover button {
+	background-color: #db3c30;
+}
+
+.learn-link {
+	font-size: 14px;
+	font-weight:normal;
+	margin-left: 32px;
+}
+
+#my_popup .card {
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	width: 800px;
+	color:#323232;
+	top: 200px;
+	box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.5);
+	border-radius: 2px;
+}
+
+#content0, #content1, #content2, #content3 {
+	height:478px;
+}
+#content0
+{
+height:182px;
+}
+#content2
+{
+height:372px;
+}
+#content3
+{
+height:202px;
+}
+#content1, #content2, #content3
+{
+display:none;
+}
+
+.content-container{
+    position: relative;
+    display: block;
+    height: 315px;
+}
+.content-container div {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+}
