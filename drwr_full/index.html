@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Help and Tips Prototype</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ <script src="https://use.fontawesome.com/2f389d008c.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+
+</head>
+
+<body style="background-color:#f5f5f5;">
+<div class="headbar"><img src="images/logo.png"></div>
+    <div id="wrapper">
+        <!-- Sidebar -->
+           <div class="overlay">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+            <li class="sidebar-brand" id="myP">
+<span style="float:left; margin-top:-40px;"><a href="#menu-toggle" style="border:none;" id="menu-toggle0"><i class="fa fa-times" style="font-size:24px; font-weight:400; margin-top:60px; color:#323232;" aria-hidden="true"></i></a></span>
+            <h3 style="width:600px; text-align:center; color:#323232;">Buzz Context Prototype</h3></li>
+            <h4 id="budget"></h4>
+            <div class="drawer-content"></div>
+                 </li>
+            </ul>
+            </div>
+        </div>
+     
+           <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+                        <div class="notT">
+                        	<div class="help_btn_postion"><a href="#budget" id="menu-toggle2"></a></div>
+                        </div>
+
+                </div>
+             
+        <!-- /#page-content-wrapper -->
+
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+   <!--  <script>
+    $("#wrapper").hasClass("toggled")) { 
+          return false;
+     $("#menu-toggle0").click(function(e) {
+        e.preventDefault();
+        if ($("#wrapper").hasClass("toggled")) { 
+          return false;
+        } else { $("#wrapper").toggleClass("toggled")}
+    });
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").scrollTop( $("#info").offset().top ); 
+        if (!$("#wrapper").hasClass("toggled")) { 
+          return;
+        } else { $("#wrapper").toggleClass("toggled")}
+    });
+       $("#menu-toggle2").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").scrollTop( $("#budget").offset().top ); 
+        if (!$("#wrapper").hasClass("toggled")) { 
+          return;
+        } else { $("#wrapper").toggleClass("toggled")}
+    });
+     $("#menu-toggle3").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").scrollTop( $("#bid").offset().top);
+        if (!$("#wrapper").hasClass("toggled")) { 
+          return;
+        } else { $("#wrapper").toggleClass("toggled")}
+    });
+       $("#menu-toggle4").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").scrollTop( $("#target").offset().top ); 
+        if (!$("#wrapper").hasClass("toggled")) { 
+          return;
+        } else { $("#wrapper").toggleClass("toggled")}
+    });
+
+
+    </script> -->
+     <script>
+     $("#menu-toggle0").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+       $("#menu-toggle2").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").scrollTop( $("#budget").offset().top ); 
+        $("#wrapper").toggleClass("toggled");
+    });
+
+
+    </script>
+
+     <script src="js/accordion.js"></script>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 0) {
+        document.getElementById("myP").className = "sidebar-brand-position";
+    } else {
+        document.getElementById("myP").className = "sidebar-brand";
+    }
+}
+</script>
+
+</body>
+
+</html>
