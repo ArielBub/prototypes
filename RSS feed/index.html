@@ -12,17 +12,17 @@
 
 <div id="feed"></div>
 
-
+<!-- resource: https://toolkit.sekando.com/docs/en/feednami -->
 
 <script>
-  const url = 'http://devblog.ricky.me/rss.xml'
-  const textarea = document.getElementById('rickys-blog-textarea')
+  const url = 'https://insights.bookbub.com/feed/'
+  const textarea = document.getElementById('feed')
   feednami.load(url)
     .then(feed => {
-      textarea.value = ''
+      div.value = ''
       console.log(feed)
       for(let entry of feed.entries){
-        textarea.value += `${entry.title}\n${entry.link}\n\n`
+        div.value += `${entry.title}\n${entry.link}\n\n`
       }
     })
 </script>
