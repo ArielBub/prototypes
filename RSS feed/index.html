@@ -16,7 +16,7 @@
 
 <script>
   const url = 'https://insights.bookbub.com/feed/'
-  const textarea = document.getElementById('feed')
+  const div = document.getElementById('feed')
   feednami.load(url)
     .then(feed => {
       div.value = ''
