@@ -10,19 +10,19 @@
 
 <body>
 
-<div id="feed"></div>
+<textarea id="feed"></textarea>
 
 <!-- resource: https://toolkit.sekando.com/docs/en/feednami -->
 
 <script>
   const url = 'https://insights.bookbub.com/feed/'
-  const div = document.getElementById('feed')
+  const textarea = document.getElementById('feed')
   feednami.load(url)
     .then(feed => {
-      div.value = ''
+      textarea.value = ''
       console.log(feed)
       for(let entry of feed.entries){
-        div.value += `${entry.title}\n${entry.link}\n\n`
+        textarea.value += `${entry.title}\n${entry.link}\n\n`
       }
     })
 </script>
